@@ -32,6 +32,7 @@ a {
   align-items: center;
   padding: 0 24px;
   z-index: 1000;
+  background-color: white;
 }
 .nav-menu {
   display: flex;
@@ -76,7 +77,28 @@ a {
   margin-top: 20%;
 }
 
-/* home page css */
+/* Half Circle css */
+.secrete-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1000;
+}
+/* half circle css ended */
+
+.first-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dis-img {
+  height: 400px;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
 
 @keyframes typing {
   from {
@@ -84,115 +106,16 @@ a {
   }
 
   to {
-    width: 100%;
+    width: 110%;
   }
 }
 
-/* color: black; font-size: 34px; margin-left: 660px; margin-top: 150px; padding:20px; 
-                height:80px;
-                " */
 .typing-text {
   overflow: hidden;
   white-space: nowrap;
-  color: black;
-  font-size: 22px;
-  margin-left: 660px;
-  margin-top: 150px;
-  animation: typing 3s steps(50) infinite alternate-reverse;
+  margin-right: 5rem;
+  animation: typing 2s steps(43) infinite alternate-reverse;
 }
-
-.overlap {
-  position: absolute;
-  /* width: 1864px; */
-  /* height: 1311px; */
-  top: -300px;
-  left: 40px;
-}
-.overlap-group {
-  position: absolute;
-  width: 1864px;
-  height: 1311px;
-  top: 0;
-  left: 0;
-  z-index: -1000;
-}
-.ellipse {
-  position: absolute;
-  width: 1300px;
-  height: 1100px;
-  top: -50px;
-  left: 593px;
-  background-color: #8eceb2;
-  border-radius: 50%;
-}
-.nav-2 {
-  margin-top: 20px;
-  position: absolute;
-  width: 1308px;
-  height: 45px;
-  top: 400px;
-  left: 0;
-}
-
-.donate-now {
-  position: absolute;
-  width: 225px;
-  height: 223px;
-  top: 850px;
-  left: 590px;
-}
-
-.overlap-3 {
-  position: relative;
-  width: 223px;
-  margin-top: -180px;
-  margin-left: -40px;
-  height: 223px;
-  background-color: #14500f;
-  border-radius: 111.5px;
-}
-
-.text-wrapper-7 {
-  position: absolute;
-  width: 181px;
-  top: 69px;
-  left: 21px;
-  font-family: "Familjen Grotesk", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 32px;
-  text-align: center;
-  letter-spacing: 4.48px;
-  line-height: normal;
-}
-
-.meclass {
-  margin-top: 50px;
-}
-
-#me {
-  margin-left: 140px;
-  margin-top: -100px;
-  width: 180px;
-  font-family: "Familjen Grotesk", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 32px;
-  text-align: center;
-  justify-content: center;
-  height: 180px;
-}
-
-.desktop .nisarg-logo {
-  width: 200;
-  background-image: url(./assets/nisarg-ngo-logo-1-4.png);
-  background-size: cover;
-  background-position: 50% 50%;
-  position: absolute;
-  left: 0;
-}
-
-/* home page css ended */
 
 @media (max-width: 768px) {
   img {
@@ -227,17 +150,5 @@ a {
   .nav-menu.active {
     left: 0;
     z-index: 1000;
-  }
-
-  /* top content */
-  .overlap-group {
-    display: none;
-  }
-  .nav-2 {
-    display: flex;
-    justify-content: center;
-  }
-  .nisarg-logo {
-    display: none;
   }
 }
