@@ -41,6 +41,9 @@
     left: 116px;
     top: 1846px;
     box-shadow: 0px 6.12px 19.89px 10.71px rgba(0, 0, 0, 0.25);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .ellipse-19 {
@@ -52,6 +55,9 @@
     left: 393px;
     top: 2322px;
     box-shadow: 0px 4.61px 14.99px 8.07px rgba(0, 0, 0, 0.25);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .ellipse-162 {
@@ -78,6 +84,9 @@
     left: 646px;
     top: 1869px;
     box-shadow: 0px 5.07px 16.47px 8.87px rgba(0, 0, 0, 0.25);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .ellipse-26 {
@@ -104,6 +113,9 @@
     box-shadow: 0px 4.16px 13.52px 7.28px rgba(0, 0, 0, 0.25);
     transform-origin: 0 0;
     transform: rotate(0.035deg) scale(1, 1);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .ellipse-34 {
@@ -115,8 +127,11 @@
     left: 986.24px;
     top: 1879px;
     box-shadow: 0px 5.25px 17.07px 9.19px rgba(0, 0, 0, 0.25);
-    transform-origin: 0 0;
-    transform: rotate(0.035deg) scale(1, 1);
+    /* transform-origin: 0 0;
+    transform: rotate(0.035deg) scale(1, 1); */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .ellipse-27 {
@@ -281,11 +296,14 @@
     width: 495.44px;
     height: 495.44px;
     position: absolute;
-    left: 697px;
-    top: 2249.96px;
+    left: 730px;
+    top: 2200px;
     box-shadow: 0px 6.61px 21.47px 11.56px rgba(0, 0, 0, 0.25);
-    transform-origin: 0 0;
-    transform: rotate(-10.462deg) scale(1, 1);
+    /* transform-origin: 0 0; */
+    /* transform: rotate(-10.462deg) scale(1, 1); */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
   }
   
   .slider-container {
@@ -1062,7 +1080,45 @@
   .ellipse-20:hover {
     box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
   }
+  /* Effect for Blur */
+  .blur-image {
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+  }
+  .effect{
+    overflow: hidden;
+  }
+  .text-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight:bold;
+    font-size: 25px;
+    color: #ffffff;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+    background-color: #49ac40;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    clip-path: circle(50% at 50% 50%);
+    justify-content: center;
+  }
   
+  .effect:hover .blur-image {
+    filter: blur(10px);
+    z-index: 2;
+  }
+  
+  .effect:hover .text-overlay {
+    opacity: 1;
+  }
+  /* end of effect of blur */
   .desktop .endorsements {
     position: absolute;
     width: 367px;
@@ -1246,4 +1302,4 @@
     height: 737px;
     top: 4077px;
     left: 0;
-  }
+  }     
