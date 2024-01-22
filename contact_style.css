@@ -1,0 +1,320 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+body {
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s ease;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+  transition: 0.7s ease;
+}
+lottie-player {
+  width: 400px;
+  height: 400px;
+  transition: 0.7s ease;
+}
+.main-card {
+  padding: 0 5rem;
+  background-color: #8eceb2; /* color change needed */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0;
+  text-align: center;
+}
+.person {
+  background-color: white;
+  margin: 0 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+}
+.person_img {
+  /* make background of image trasnaprent by aplying effect*/
+  background-color: #8eceb2;
+  border-radius: 50%;
+}
+.person_name {
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: "Familjen Grotesk", Helvetica;
+}
+.person_no {
+  font-size: 0.9em;
+  color: grey;
+  font-family: "Familjen Grotesk", Helvetica;
+}
+.social_heading {
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: "Familjen Grotesk", Helvetica;
+}
+.social_logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social_link {
+  height: 2rem;
+  margin: 0.4rem 0.8rem;
+}
+/* Footer css */
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed {
+  margin-top: -20px;
+  background: #8eceb2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Open Sans", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #001f3f;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.5;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Familjen Grotesk", Helvetica;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 30%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #001f3f;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #800000;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #5a4766;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #5d5264;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  align-items: center;
+  text-align: center;
+}
+
+.erc {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0.5rem;
+}
+.erc a {
+  color: black;
+  text-decoration: none;
+}
+.footer-left {
+  text-align: center;
+}
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .lottie {
+    display: flex;
+
+    justify-content: center;
+  }
+  lottie-player {
+    width: 200px;
+    height: 200px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .main-card {
+    margin: 0 2rem;
+  }
+  .team {
+    flex-direction: column;
+  }
+  .person {
+    margin: 1rem 0;
+  }
+  .social_heading {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .social_logos {
+    margin-bottom: 3rem;
+  }
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+    font-size: 50px;
+  }
+
+  .footer-distributed .footer-company-name {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .footer-distributed .footer-links a {
+    font-size: 20px;
+  }
+
+  .footer-distributed .footer-center p {
+    font-size: 20px;
+  }
+
+  .footer-distributed .footer-center p span {
+    font-size: 20px;
+  }
+  .footer-distributed .footer-company-about {
+    font-size: 20px;
+  }
+
+  .footer-distributed .footer-company-about span {
+    font-size: 25px;
+  }
+}

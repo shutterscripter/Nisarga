@@ -1,0 +1,111 @@
+.gallery-container {
+  margin: auto;
+  width: 1440px;
+}
+.heading {
+  color: grey;
+  font-family: "Gelasio", Helvetica;
+  text-align: center;
+  margin: 2rem;
+}
+.outer-rectangle {
+  /* background-color: rgb(228, 228, 228); */
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.myRectangle-1 {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 330px;
+  background-color: #ffffff;
+  box-shadow: 2px 4px 13px 3px #00000040;
+  display: flex;
+}
+
+img {
+  object-fit: cover;
+}
+
+.img-shadow {
+  color: #000000;
+}
+.img-shadow:hover {
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.text-outer-div {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 50px;
+  width: 90%;
+  font-family: "Gelasio", Helvetica;
+  /* border: 1px solid black; */
+}
+
+.text-innter-div {
+  float: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgba(189, 243, 186, 0.334);
+  border: 1px solid rgba(0, 0, 0, 0.187);
+  border-radius: 25px;
+  letter-spacing: 2px;
+  font-family: "Gelasio", Helvetica;
+}
+.text-innter-div h1 {
+  font-size: 20px;
+}
+
+@media (max-width: 1440px) {
+  .gallery-container {
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 3%;
+  }
+  .myRectangle-1 {
+    /* margin-left:3%; */
+    margin-top: 20px;
+    width: 350px;
+    /* height: 325px; */
+  }
+}
+@media (max-width: 1276px) {
+  .gallery-container {
+    width: 90%;
+    margin-left: 5%;
+    /* padding-left:10%; */
+  }
+  .myRectangle-1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 380px;
+    /* height: 335px; */
+    /* background-color:rgb(100, 8, 8) ; */
+  }
+}
+@media (max-width: 1000px) {
+  .gallery-container {
+    width: 90%;
+    margin-left: 5%;
+    /* padding-left:10%; */
+  }
+  .outer-rectangle {
+    width: 90%;
+  }
+  .myRectangle-1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 98%;
+    /* height: 335px; */
+    background-color: rgb(100, 8, 8);
+  }
+}
+
+.myRectangle-1 img {
+  width: 100%;
+}
